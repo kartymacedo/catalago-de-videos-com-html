@@ -1,53 +1,202 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guiminamflix</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
-        rel="stylesheet">
-    <title>Guiminamflix</title>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <header>GUIMINAMFLIX</header>
+    <header>
+        <div class="logo-container">
+            <h1>GUIMINAMFLIX</h1>
+            <div class="spider-web"></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="nav-link">Início</a></li>
+                <li><a href="#" class="nav-link">Filmes</a></li>
+                <li><a href="#" class="nav-link">Séries</a></li>
+                <li><a href="#" class="nav-link">Minha Lista</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <section class="chamada">
-        <div class="chamada-texto">
-            <h1>ATRAVÉS DO ARANHAVERSO</h1>
-            <p>#homem-aranha</p>
+        <div class="chamada-content">
+            <div class="chamada-texto">
+                <h1>ATRAVÉS DO ARANHAVERSO</h1>
+                <p>Miles Morales está de volta para uma nova aventura épica através do multiverso. Junte-se a uma equipe incrível de Homens-Aranha para enfrentar uma ameaça poderosa.</p>
+                <div class="chamada-buttons">
+                    <button class="btn-primary">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 5V19L19 12L8 5Z" fill="currentColor"/>
+                        </svg>
+                        Assistir
+                    </button>
+                    <button class="btn-secondary">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 16L5 11L6.41 9.59L10 13.17L17.59 5.58L19 7L10 16Z" fill="currentColor"/>
+                        </svg>
+                        Minha Lista
+                    </button>
+                </div>
+            </div>
+            <div class="video-container">
+                <div class="video-wrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/gt_fAE1Eg2Q?si=EEv-tsY_b1B2OwKE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
         </div>
-
-        <div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/gt_fAE1Eg2Q?si=EEv-tsY_b1B2OwKE"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
+        <div class="spider-effect"></div>
     </section>
 
     <section class="categoria">
         <h2>Filmes e séries</h2>
         <div class="categoria-videos">
-            <a href="https://www.youtube.com/watch?v=cs15QqG6Gjc">
-                <img src="https://img.youtube.com/vi/cs15QqG6Gjc/maxresdefault.jpg" />
-            </a>
-            <a href="https://www.youtube.com/watch?v=nCmIwcycUJ8">
-                <img src="https://img.youtube.com/vi/nCmIwcycUJ8/maxresdefault.jpg" />
-            </a>
-            <a href="https://www.youtube.com/watch?v=FvRmEapoHRc">
-                <img src="https://img.youtube.com/vi/FvRmEapoHRc/maxresdefault.jpg" />
-            </a>
-            <a href="https://www.youtube.com/watch?v=Ipkw_hWW-Hw">
-                <img src="https://img.youtube.com/vi/Ipkw_hWW-Hw/maxresdefault.jpg" />
-            </a>
-            <a href="https://www.youtube.com/watch?v=d4DzMNGoyis">
-                <img src="https://img.youtube.com/vi/d4DzMNGoyis/maxresdefault.jpg" />
-            </a>
+            <div class="video-card">
+                <a href="https://www.youtube.com/watch?v=cs15QqG6Gjc">
+                    <div class="card-image">
+                        <img src="https://img.youtube.com/vi/cs15QqG6Gjc/maxresdefault.jpg" alt="Homem-Aranha no Aranhaverso" />
+                        <div class="card-overlay">
+                            <div class="play-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 5V19L19 12L8 5Z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Homem-Aranha no Aranhaverso</h3>
+                        <p>Animção • 2018</p>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="video-card">
+                <a href="https://www.youtube.com/watch?v=nCmIwcycUJ8">
+                    <div class="card-image">
+                        <img src="https://img.youtube.com/vi/nCmIwcycUJ8/maxresdefault.jpg" alt="Homem-Aranha: Longe de Casa" />
+                        <div class="card-overlay">
+                            <div class="play-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 5V19L19 12L8 5Z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Homem-Aranha: Longe de Casa</h3>
+                        <p>Ação • 2019</p>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="video-card">
+                <a href="https://www.youtube.com/watch?v=FvRmEapoHRc">
+                    <div class="card-image">
+                        <img src="https://img.youtube.com/vi/FvRmEapoHRc/maxresdefault.jpg" alt="Homem-Aranha: De Volta ao Lar" />
+                        <div class="card-overlay">
+                            <div class="play-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 5V19L19 12L8 5Z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Homem-Aranha: De Volta ao Lar</h3>
+                        <p>Ação • 2017</p>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="video-card">
+                <a href="https://www.youtube.com/watch?v=Ipkw_hWW-Hw">
+                    <div class="card-image">
+                        <img src="https://img.youtube.com/vi/Ipkw_hWW-Hw/maxresdefault.jpg" alt="Homem-Aranha: Sem Volta para Casa" />
+                        <div class="card-overlay">
+                            <div class="play-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 5V19L19 12L8 5Z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Homem-Aranha: Sem Volta para Casa</h3>
+                        <p>Ação • 2021</p>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="video-card">
+                <a href="https://www.youtube.com/watch?v=d4DzMNGoyis">
+                    <div class="card-image">
+                        <img src="https://img.youtube.com/vi/d4DzMNGoyis/maxresdefault.jpg" alt="Homem-Aranha 2" />
+                        <div class="card-overlay">
+                            <div class="play-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 5V19L19 12L8 5Z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Homem-Aranha 2</h3>
+                        <p>Ação • 2004</p>
+                    </div>
+                </a>
+            </div>
         </div>
     </section>
 
-</body>
+    <footer>
+        <div class="footer-content">
+            <div class="logo-footer">
+                <h2>GUIMINAMFLIX</h2>
+            </div>
+            <div class="footer-links">
+                <a href="#">Termos de Uso</a>
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Contato</a>
+            </div>
+        </div>
+    </footer>
 
+    <script>
+        // Efeito de digitação no título
+        document.addEventListener('DOMContentLoaded', function() {
+            const title = document.querySelector('.chamada-texto h1');
+            const originalText = title.textContent;
+            title.textContent = '';
+            
+            let i = 0;
+            const typeWriter = () => {
+                if (i < originalText.length) {
+                    title.textContent += originalText.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, 100);
+                }
+            };
+            
+            setTimeout(typeWriter, 500);
+            
+            // Efeito de hover nos cards
+            const cards = document.querySelectorAll('.video-card');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-10px) scale(1.05)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+        });
+    </script>
+</body>
 </html>
